@@ -1,2 +1,13 @@
-data/*
-**/.DS_STORE
+# Data
+data/
+
+# Mac
+.DS_Store
+
+# Original Files from course repo
+project2_description.pdf
+project_text_classification/
+
+# Notebook checkpoints
+*.ipynb_checkpoints
+
