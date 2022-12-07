@@ -11,3 +11,5 @@ project_text_classification/
 # Notebook checkpoints
 *.ipynb_checkpoints
 
+# Python
+__pycache__/
