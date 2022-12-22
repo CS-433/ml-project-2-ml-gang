@@ -22,9 +22,11 @@ Table of content
 Python files containing embeddings and models in order to classify a dataset of tweets based on sentiment.
 A PDF report explaining our work process and discoveries, as well as the accuracies and F1-Scores we obtained.
 
-Embeddings: TF-IDF, GloVe, Word2Vec, Fasttext, BERT
+Embeddings: GloVe, Word2Vec, Fasttext, BERT
 Models: Logistic Regression, Linear SVM, MLP Classifier, Fasttext
 Recurrent Neural Networks: LSTM, GRU
+
+Branch "jacopo" contains exploration files on TF-IDF and n-grams. File exploration_v2_Jacopo contains our best accuracy which is 0.848.
 
 How to run ?
 
