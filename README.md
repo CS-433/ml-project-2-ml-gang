@@ -17,7 +17,7 @@ The goal of this project was to build a fine-tuned Machine Learning model for bi
 
 └── run.ipynb                  # Main file with most combinations of embeddings/models that we tried
 
-Table of content
+### Table of content
 
 Python files containing embeddings and models in order to classify a dataset of tweets based on sentiment.
 A PDF report explaining our work process and discoveries, as well as the accuracies and F1-Scores we obtained.
@@ -26,9 +26,10 @@ Embeddings: GloVe, Word2Vec, Fasttext, BERT
 Models: Logistic Regression, Linear SVM, MLP Classifier, Fasttext
 Recurrent Neural Networks: LSTM, GRU
 
-Branch "jacopo" contains exploration files on TF-IDF and n-grams. File exploration_v2_Jacopo contains our best accuracy which is 0.848.
+Branch "jacopo" contains exploration files on TF-IDF and n-grams.
+In the report, we had to limit the number of configurations we presented, we did not mention Decision Tree Classifier, Ensemble Methods nor Boosting methods but all experiments are detailed in the secondary branch 'jacopo', divided in versions. Note how our best submission is at the end of exploration_v2_Jacopo file. By going through the printed results and comments you can see details on time, testing, hyperparameters tuning. 
 
-How to run ?
+### How to run ?
 
 Running the file run.ipynb will sequentially run every combinations of embeddings and models we have tested, giving corresponding accuracies and F1-scores, as well as writing submission files. Some combinations might be particularly expensive and time-consuming to run, such as the Neural Networks and BERT that we implemented but
 suffers from OOM errors. The file is hence not really meant to be run at once, but rather having each of its sections running individually.
