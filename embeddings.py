@@ -6,7 +6,8 @@ import multiprocessing
 
 def load_glove_embeddings():
     glove_embeddings = dict()
-    with open("data/glove.6B.100d.txt", "r", encoding="utf-8") as f:
+    #with open("data/glove.6B.100d.txt", "r", encoding="utf-8") as f:
+    with open("data/glove.twitter.27B.100d.txt", "r", encoding="utf-8") as f:
         for line in f:
             values = line.split()
             word = values[0]
@@ -27,8 +28,9 @@ def word2vec(tokens,model):
 def glove2vec(tokens,glove_embeddings):
     embeddings = []
     for token in tokens:
+        word = token.lower()
         embedding = glove_embeddings.get(token)
-        if token is not None:
+        if embedding is not None:
             embeddings.append(embedding) 
     if len(embeddings) == 0:
         return np.zeros(100)
