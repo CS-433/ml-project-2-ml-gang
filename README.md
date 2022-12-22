@@ -6,14 +6,16 @@ The goal of this project was to build a fine-tuned Machine Learning model for bi
 
 ### Folder structure
 
-'''bash
 .
 ├── embeddings.py              # Methods to embed text to vectors using different embeddings such as GloVe and Word2Vec
+
 ├── models.py                  # Methods to train, test and predict various ML models and Recurrent Neural Networks.
+
 ├── fasttext_model.py          # Methods to label tweets according to fasttext syntax and run the fasttext model
+
 ├── preprocessing.py           # Methods for pre-processing
+
 └── run.ipynb                  # Main file with most combinations of embeddings/models that we tried
-'''
 
 Table of content
 
