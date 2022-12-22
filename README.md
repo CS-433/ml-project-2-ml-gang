@@ -4,7 +4,7 @@ Introduction
 
 The goal of this project was to build a fine-tuned Machine Learning model for binary classification of tweets based on their sentiment. The model is designed to recognize if a tweet would have contained a ":)" smiley or a ":(" smiley, which is a proxy for classifying whether the tweet is positive or negative. Five dataset were provided: two full training datasets containing roughly 1 250 000 tweets each, with respectively positive and negative tweets, two samples of the training tweets containing about 10\% of the full data, and a test dataset of 10 000 unlabeled tweets to submit our predictions with label encoding as +1 and -1 for ':)' (positive) and ':(' (negative) respectively. To evaluate our models we used randomized splitting on the partial and full training data as well as cross-validation, then final testing with submission on AICrowd (www.aicrowd.com) which would then compare the obtained labels with the expected ones and rank based on the accuracy and F1-Score.
 
-Folder structure
+### Folder structure
 
 .
 ├── embeddings.py              # Methods to embed text to vectors using different embeddings such as GloVe and Word2Vec
